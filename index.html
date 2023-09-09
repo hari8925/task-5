@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+        <div class="container-fluid">
+          <i class="p-2 fs-3 fa-solid fa-utensils fa-bounce"></i>
+          <a class="navbar-brand text-dark" href="#"
+            >Food <span class="food">Street</span></a
+          >
+          <!-- button -->
+
+          <div class="navbar-nav ms-auto me-2">
+            <i class="fa-solid fa-cart-shopping fs-4" id="cart-icon">
+              <span id="cart-count">0</span>
+            </i>
+
+            <div class="cart">
+              <div class="cart-tittle">Cart Items</div>
+              <div class="cart-content">
+                <!-- cart-box-1 -->
+                <!--             
+                <div class="cart-box">
+                  <img
+                    class="cart-img"
+                    src="./bg-1.jpg"
+                  />
+                  <div class="detail-box">
+                    <div class="cart-food-tittle">sepical dosa</div>
+                    <div class="price-box">
+                      <div class="cart-price">123 $</div>
+                      <div class="cart-amt">65$</div>
+                    </div>
+                    <input type="number" value="1" class="cart-quantity" />
+                  </div>
+                  <i class="fa-solid fa-trash-can cart-remove"></i>
+                </div>
+               
+
+                <div class="cart-box">
+                  <img
+                    class="cart-img"
+                    src="./bg-1.jpg"
+                    style="object-fit: cover; width: 100%"
+                    alt=""
+                  />
+                  <div class="detail-box">
+                    <div class="cart-food-tittle">sepical dosa</div>
+                    <div class="price-box">
+                      <div class="cart-price">123 $</div>
+                      <div class="cart-amt">65$</div>
+                    </div>
+                    <input type="number" value="1" class="cart-quantity" />
+                  </div>
+                  <i class="fa-solid fa-trash-can cart-remove"></i>
+                </div>R
+            -->
+              </div>
+              <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.0</div>
+              </div>
+              <button class="btn-buy">Place Order</button>
+              <i class="fa fa-close" id="cart-close"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- section -->
+    <section class="py-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+        <div class="col">
+          <div class="card w-75 mx-auto d-flex justify-content-around mb-1">
+            <img
+              class="img-fluid rounded img-thumbnail food-img"
+              src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5vb2RsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+
+            <h3 class="card-title text-center">Noodles</h3>
+            <h5 class="text-primary card-price text-center">Rs.40</h5>
+            <button class="btn btn-outline-warning mb-2 w-50 mx-auto add-cart">
+              Add Cart
+            </button>
+            <button class="btn btn-outline-primary w-50 mx-auto mb-2">
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col">
+          <div class="card w-75 mx-auto d-flex justify-content-around mb-1">
+            <img
+              class="img-fluid rounded img-thumbnail food-img"
+              src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGl6emF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+
+            <h3 class="card-title text-center">Pizza</h3>
+            <h5 class="text-primary card-price text-center">Rs.140</h5>
+            <button class="btn btn-outline-warning mx-auto w-50 mb-2 add-cart">
+              Add Cart
+            </button>
+            <button class="btn btn-outline-primary mx-auto w-50 mb-2">
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col">
+          <div class="card w-75 mx-auto d-flex justify-content-around mb-1">
+            <img
+              class="img-fluid rounded img-thumbnail food-img"
+              src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftb3NhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+
+            <h3 class="card-title text-center">Samosa</h3>
+            <h5 class="text-primary text-center card-price">Rs.20</h5>
+            <button class="btn btn-outline-warning mx-auto w-50 mb-2 add-cart">
+              Add Cart
+            </button>
+            <button class="btn btn-outline-primary mx-auto w-50 mb-2">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="py-1 text-center container-fluid bg-primary mb-5">
+      Non- <span class="text-primary text-white">Veg</span>
+    </h1>
+    <!-- section-2 -->
+    <section class="mb-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4 py-1">
+        <div class="col">
+          <div class="card w-75 mx-auto d-flex justify-content-around mb-1">
+            <img
+              class="img-fluid rounded img-thumbnail food-img"
+              src="https://images.unsplash.com/photo-1630851840633-f96999247032?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hpY2tlbiUyMGJpcnlhbml8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+
+            <h3 class="card-title text-center">Briyani</h3>
+            <h5 class="text-primary text-center card-price">Rs.250</h5>
+            <button class="btn btn-outline-warning mx-auto w-50 mb-2 add-cart">
+              Add Cart
+            </button>
+            <button class="btn btn-outline-primary mx-auto w-50 mb-2">
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="col">
+          <div class="card w-75 mx-auto d-flex justify-content-around mb-1">
+            <img
+              class="img-fluid rounded img-thumbnail food-img"
+              src="https://images.unsplash.com/photo-1624726175512-19b9baf9fbd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2hpY2tlbiUyMHdpbmdzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+
+            <h3 class="card-title text-center">Chicken Wings</h3>
+            <h5 class="text-primary text-center card-price">Rs.259</h5>
+            <button class="btn btn-outline-warning mx-auto w-50 mb-2 add-cart">
+              Add Cart
+            </button>
+            <button class="btn btn-outline-primary mx-auto w-50 mb-2">
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col">
+          <div class="card w-75 mx-auto d-flex justify-content-around mb-1">
+            <img
+              class="img-fluid rounded img-thumbnail food-img"
+              src="https://images.unsplash.com/photo-1628524083371-6fe9616a264c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2hpY2tlbiUyMGxlZ3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+
+            <h3 class="card-title text-center">Chicken Legs</h3>
+            <h5 class="text-primary card-price text-center">Rs.467</h5>
+            <button class="btn btn-outline-warning mx-auto w-50 mb-2 add-cart">
+              Add Cart
+            </button>
+            <button class="btn btn-outline-primary mx-auto w-50 mb-2">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
